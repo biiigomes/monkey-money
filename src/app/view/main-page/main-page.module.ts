@@ -10,6 +10,9 @@ import { MainPageComponent } from './main-page.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    MainPageComponent
   ]
 })
 export class MainPageModule { }

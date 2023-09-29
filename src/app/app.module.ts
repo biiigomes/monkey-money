@@ -5,15 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './view/main-page/main-page.component';
 import { MainPageModule } from './view/main-page/main-page.module';
+import { IdeasPageComponent } from './view/ideas-page/ideas-page.component';
+import { IdeasPageModule } from './view/ideas-page/ideas-page.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+    IdeasPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MainPageModule
+    MainPageModule,
+    IdeasPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
