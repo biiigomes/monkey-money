@@ -1,1 +1,21 @@
-<p>ideas-page works!</p>
+<div class="container">
+    <h3>PÁGINA PARA ESCREVER SUAS IDEIAS</h3>
+</div>
+
+<form [formGroup]="formGroup">
+    <div>
+        <input formControlName="name" />
+        <label>Título</label>
+    </div>
+    <div>
+        <input formControlName="subtitle" />
+        <label>Subtitulo</label>
+    </div>
+    <div>
+        <input formControlName="idea" />
+        <label>Ideia</label>
+    </div>
+</form>
+
+<button (click)="createIdea()">Salvar</button>
+<button (click)="previousPage()">Voltar</button>

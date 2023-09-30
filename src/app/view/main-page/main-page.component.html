@@ -1,1 +1,15 @@
-<p>main-page works!</p>
+<div>
+    <h3>PAGINA PRINCIPAL</h3>
+</div>
+
+<div>
+    <ul>
+        <li *ngFor="let idea of ideas">
+            TÍTULO: {{ idea.name }} <br/>
+            IDEIA: {{ idea.idea }}
+        </li>
+    </ul>
+</div>
+
+<button (click)="goToIdeasPage()">CRIAR</button>
+
