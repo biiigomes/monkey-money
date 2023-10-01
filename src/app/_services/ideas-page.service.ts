@@ -22,8 +22,4 @@ export class IdeasPageService {
   getIdea(): Observable<IdeasPageResponse[]> {
     return this.http.get<IdeasPageResponse[]>(this.baseUrl);
   }
-
-  patchIdea(body: IdeasPageRequest, id: string): Observable<IdeasPageRequest> {
-    return this.http.patch<IdeasPageRequest>(this.baseUrl, body);
-  }
 }

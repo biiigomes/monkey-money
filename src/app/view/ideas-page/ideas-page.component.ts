@@ -34,7 +34,7 @@ export class IdeasPageComponent implements OnInit {
     let rawValue = this.formGroup.getRawValue();
     this._ideaService.postIdea(rawValue).subscribe(
       (response) => {
-        alert('CRIADO');
+        this._router.navigate(['']);
       }
     )
   }

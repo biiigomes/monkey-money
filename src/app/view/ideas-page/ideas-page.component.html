@@ -3,19 +3,21 @@
 </div>
 
 <form [formGroup]="formGroup">
-    <div>
+    <div class="container">
+        <label class="text">Título</label>
         <input formControlName="name" />
-        <label>Título</label>
     </div>
-    <div>
+    <div class="container">
+        <label class="text">Subtitulo</label>
         <input formControlName="subtitle" />
-        <label>Subtitulo</label>
     </div>
-    <div>
-        <input formControlName="idea" />
-        <label>Ideia</label>
+    <div class="container">
+        <label class="text">Ideia</label>
+        <textarea formControlName="idea"> </textarea>
     </div>
 </form>
 
-<button (click)="createIdea()">Salvar</button>
-<button (click)="previousPage()">Voltar</button>
+<div class="container">
+    <button (click)="createIdea()" class="button">Salvar</button>
+    <button (click)="previousPage()" class="button">Voltar</button>
+</div>
