@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Acme");
+h1{
+    heigth: 32px;
+    width: auto;
+    font-family: "Acme", sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 5px;
+    font-size: 85px;
+    text-align: center;
+    appearance: none;
+    position:relative;
+    z-index:1;
+
+}
+
+.onda {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.onda svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 172px;
+}
+
+.onda .shape-fill {
+    fill: #daa520;
+}
