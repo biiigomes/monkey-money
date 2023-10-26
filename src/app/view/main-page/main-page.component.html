@@ -1,0 +1,17 @@
+<div class="container">
+    <h3>PAGINA PRINCIPAL</h3>
+</div>
+
+<div>
+    <ul>
+        <div *ngFor="let idea of ideas" class="container ideas-reader">
+                TÍTULO: {{ idea.name }} <br/>
+                IDEIA: {{ idea.idea }}
+        </div>
+    </ul>
+</div>
+
+<div class="container">
+    <button (click)="goToIdeasPage()" class="button">CRIAR</button>
+</div>
+

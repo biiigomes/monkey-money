@@ -1,0 +1,23 @@
+<div class="container">
+    <h3>PÁGINA PARA ESCREVER SUAS IDEIAS</h3>
+</div>
+
+<form [formGroup]="formGroup">
+    <div class="container">
+        <label class="text">Título</label>
+        <input formControlName="name" />
+    </div>
+    <div class="container">
+        <label class="text">Subtitulo</label>
+        <input formControlName="subtitle" />
+    </div>
+    <div class="container">
+        <label class="text">Ideia</label>
+        <textarea formControlName="idea"> </textarea>
+    </div>
+</form>
+
+<div class="container">
+    <button (click)="createIdea()" class="button">Salvar</button>
+    <button (click)="previousPage()" class="button">Voltar</button>
+</div>

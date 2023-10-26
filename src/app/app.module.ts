@@ -1,19 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { HeaderModule } from './shared/header/header.module';
+import { IdeasPageModule } from './view/ideas-page/ideas-page.module';
+import { MainPageModule } from './view/main-page/main-page.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HeaderModule
+    HeaderModule,
+    MainPageModule,
+    IdeasPageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
