@@ -1,3 +1,14 @@
+.card {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(254, 255, 210);
+    border: 1px solid black;
+    border-radius: 10%;
+    margin:5% 50% 0 30%;
+    padding: 10px;
+  box-shadow: 5px 10px rgba(136, 136, 136, 0.5);
+}
+
 .container {
     margin-top: 5px;
     display: flex;
@@ -13,13 +24,21 @@ h3{
 }
 
 .button {
-    background-color: rgb(131, 142, 177);
-    color: black;
-    border: none !important;
-    padding: 10px;
-    border-radius: 5px;
+    background: #FBCA1F;
+    padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid rgb0(0, 0, 0) !important;
+  border-radius: 0.4em;
+  box-shadow: 0.2em 0.2em rgba(0, 0, 0, 0.2);
 }
 
 .button:hover {
     cursor: pointer;
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.17em 0.17em rgba(0, 0, 0, 0.2);
 }
+.button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.07em 0.07em rgba(0, 0, 0, 0.2);
+  }
