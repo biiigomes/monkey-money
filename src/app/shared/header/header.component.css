@@ -6,7 +6,7 @@ h1{
     -webkit-appearance: none;
     -moz-appearance: none;
     margin: 5px;
-    font-size: 85px;
+    font-size: 55px;
     text-align: center;
     appearance: none;
     position:relative;
@@ -14,22 +14,69 @@ h1{
 
 }
 
-.onda {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+.titulo{
+    display:inline-flex ;
+    margin: 2% 30%;
 }
 
-.onda svg {
+
+.ani{
     position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 172px;
+  margin: 15px 0 0 5px ;
+  bottom: 0px;
+  left: 0px;
+  animation: pulo 0.7s ease-in-out infinite alternate;
+}
+.l2{
+    animation-delay: 0.1s;
+}
+.l3{
+    animation-delay: 0.2s;
+}
+.l4{
+    animation-delay: 0.3s;
+}
+.l5{
+    animation-delay: 0.4s;
+}
+.l6{
+    animation-delay: 0.5s;
+}
+.l7{
+    margin:0 15px 0 15px;
+    animation-delay: 0.6s;
+}
+.l8{
+    animation-delay: 0.7s;
+}
+.l9{
+    animation-delay: 0.8s;
+}
+.l10{
+    animation-delay: 0.9s;
+}
+.l11{
+    animation-delay: 1s;
+}
+.l12{
+    animation-delay: 1.1s;
 }
 
-.onda .shape-fill {
-    fill: #daa520;
-}
+
+@keyframes pulo {
+    0% {
+      transform: scale(1, 0.7);
+    }
+  
+    40% {
+      transform: scale(0.5, 1.2);
+    }
+  
+    60% {
+      transform: scale(1, 1);
+    }
+  
+    100% {
+      bottom: 40px;
+    }
+  }
