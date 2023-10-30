@@ -1,24 +1,28 @@
+<div class="card">
 <app-header></app-header>
+<div>
 <div class="container">
     <h3>PÁGINA PARA ESCREVER SUAS IDEIAS</h3>
 </div>
 
-<form [formGroup]="formGroup">
-    <div class="container">
-        <label class="text">Título</label>
-        <input formControlName="name" />
+<form  class="form ">
+    
+    <div class="group">
+    <input placeholder="" type="text" formControlName="name" required="">
+    <label for="name">Título</label>
     </div>
-    <div class="container">
-        <label class="text">Subtitulo</label>
-        <input formControlName="subtitle" />
+<div class="group">
+    <input placeholder="" type="text" formControlName="subtitle" id="subtitulo" name="email" required="">
+    <label for="subtitulo">Subtitulo</label>
     </div>
-    <div class="container">
-        <label class="text">Ideia</label>
-        <textarea formControlName="idea"> </textarea>
-    </div>
+<div class="group">
+    <textarea placeholder="" id="ideia" formControlName="idea" name="idaia" rows="5" required=""></textarea>
+    <label for="ideia">Ideia</label>
+</div>
 </form>
 
 <div class="container">
     <button (click)="createIdea()" class="button">Salvar</button>
     <button (click)="previousPage()" class="button">Voltar</button>
+</div>
 </div>
